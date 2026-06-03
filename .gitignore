@@ -1,0 +1,15 @@
+﻿app_state/
+evidence/
+reports/
+vendor/
+__pycache__/
+*.pyc
+*.pyo
+*.bin
+*.log
+*.jsonl
+*.jpg
+*.jpeg
+*.png
+*.webp
+*.bmp

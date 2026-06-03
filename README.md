@@ -1,0 +1,47 @@
+# E-Ink Frame Alternative
+
+Windows client for compatible PicPak-style e-ink photo frames.
+
+## Download
+
+Download `dist/PicPakTool.exe` from this repository or from the latest GitHub release.
+
+The executable is self-contained. It includes the client, image tools, stock backup/restore helpers, and the modified firmware package.
+
+## What It Does
+
+- Connects to stock frames over Bluetooth.
+- Supports stock USB workflows for backup, firmware install, and restore.
+- Supports modified firmware over USB, Bluetooth, and Wi-Fi.
+- Lets you process, crop, rotate, zoom, calibrate, and preview images before sending.
+- Supports text, emoji/sticker overlays, gallery thumbnails, library backup/restore, and per-device libraries.
+- Can back up a stock frame before installing the modified firmware.
+- Can restore a frame back to stock firmware from the backup made from that same frame.
+
+## Stock Firmware
+
+Stock frames can be used without changing firmware. Bluetooth is the preferred stock connection for normal image work.
+
+Stock USB is mainly for backup, trying the modified firmware, restoring stock firmware, and manual recovery work. To use stock USB, long-press the frame button to wake the connection mode, then scan/connect USB in the app. The stock USB window is short-lived and can be slow.
+
+## Modified Firmware
+
+The modified firmware enables faster custom USB, Bluetooth, Wi-Fi workflows, local slot display commands, motion controls, and library manifest support.
+
+Before installing modified firmware, the app requires a full backup of the individual frame. Keep that backup somewhere safe. It is the route back to stock for that specific frame.
+
+## Updates
+
+Use `About > Check for updates` inside the app to check the public GitHub releases page. If a newer release is available, the app can download the release package for you.
+
+## License
+
+E-Ink Frame Alternative is licensed under the PolyForm Noncommercial License 1.0.0.
+
+Required Notice: Copyright 2026 Neil Cameron.
+
+See `LICENSE` for the full license terms.
+
+## Third-Party Components
+
+See `THIRD_PARTY_NOTICES.md` for bundled component and asset notices.
