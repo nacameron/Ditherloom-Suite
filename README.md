@@ -22,13 +22,15 @@ The executable is self-contained. It includes the client, image tools, stock bac
 
 Stock frames can be used without changing firmware. Bluetooth is the preferred stock connection for normal image work.
 
-Stock USB is mainly for backup, trying the modified firmware, restoring stock firmware, and manual recovery work. To use stock USB, long-press the frame button to wake the connection mode, then scan/connect USB in the app. The stock USB window is short-lived and can be slow.
+Stock USB is mainly for backup, trying the modified firmware, restoring stock firmware, and manual recovery work. For stock USB gallery or backup access, long-press the frame button to wake the connection mode, then scan/connect USB in the app. The stock USB window is short-lived and can be slow.
 
 ## Modified Firmware
 
 The modified firmware enables faster custom USB, Bluetooth, Wi-Fi workflows, local slot display commands, motion controls, and library manifest support.
 
 Before installing modified firmware, the app requires a full backup of the individual frame. Keep that backup somewhere safe. It is the route back to stock for that specific frame.
+
+After the backup is complete, use the safer firmware install route: unplug USB, hold the frame button, reconnect USB while still holding the button, release once Windows sees the USB port, then scan/select that port in the app and start the firmware install.
 
 ## Updates
 
