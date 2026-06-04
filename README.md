@@ -44,6 +44,8 @@ Required Notice: Copyright 2026 Neil Cameron.
 
 See `LICENSE` for the full license terms.
 
+The PolyForm licence applies to E-Ink Frame Alternative software and firmware only. Bundled third-party components and OpenMoji artwork remain under their own licence terms.
+
 ## Third-Party Components
 
 See `THIRD_PARTY_NOTICES.md` for bundled component and asset notices.

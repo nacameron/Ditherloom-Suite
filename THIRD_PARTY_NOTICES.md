@@ -2,6 +2,8 @@
 
 This release bundles third-party components and assets. Their own license terms continue to apply.
 
+The PolyForm Noncommercial License 1.0.0 applies to E-Ink Frame Alternative software and firmware only. It does not re-license third-party components, runtimes, tools, or artwork and does not remove any attribution, share-alike, source, or notice obligations attached to them.
+
 ## OpenMoji
 
 - Use: emoji and sticker artwork.
@@ -9,6 +11,7 @@ This release bundles third-party components and assets. Their own license terms 
 - Source: https://openmoji.org/
 - License: https://creativecommons.org/licenses/by-sa/4.0/
 - Copyright: OpenMoji project / HfG Schwaebisch Gmuend and contributors.
+- Note: OpenMoji artwork remains under CC BY-SA 4.0. If you distribute images or designs containing OpenMoji artwork, the CC BY-SA 4.0 terms may apply to that artwork.
 
 ## Pillow
 
@@ -23,6 +26,13 @@ This release bundles third-party components and assets. Their own license terms 
 - License: Apache License 2.0.
 - Source: https://github.com/opencv/opencv-python
 - License: https://github.com/opencv/opencv-python/blob/4.x/LICENSE.txt
+
+## NumPy
+
+- Use: array processing support used by image effects and OpenCV paths.
+- License: BSD-3-Clause License, with bundled dependency notices.
+- Source: https://numpy.org/
+- License: https://numpy.org/doc/stable/license.html
 
 ## Bleak
 
