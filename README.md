@@ -4,9 +4,9 @@ Windows client for compatible PicPak-style e-ink photo frames.
 
 ## Download
 
-Download `dist/PicPakTool.exe` from this repository or from the latest GitHub release.
+Public downloads are temporarily paused while the next build is prepared.
 
-The executable is self-contained. It includes the client, image tools, stock backup/restore helpers, and the modified firmware package.
+Do not download or run older files from this repository until a new release is published.
 
 ## What It Does
 
