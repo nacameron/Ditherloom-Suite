@@ -4,9 +4,11 @@ Windows client for compatible PicPak-style e-ink photo frames.
 
 ## Download
 
-For a first install, download the latest release package, create a folder on your hard drive that you will remember, extract the zip into that folder, then run `PicPakTool.exe`.
+Public downloads are temporarily paused while the firmware installer is being re-verified.
 
-For updates, use `About > Check for updates` inside the app. The updater installs into the same folder so your saved gallery, backups, Wi-Fi details, and license acceptance are preserved. If you update manually, extract the new release over the existing app folder instead of making a new folder.
+When downloads reopen, first-time users should download the latest release package, create a folder on their hard drive that they will remember, extract the zip into that folder, then run `PicPakTool.exe`.
+
+For updates, use `About > Check for updates` inside the app. The updater installs into the same folder so saved gallery, backups, Wi-Fi details, and license acceptance are preserved. If updating manually, extract the new release over the existing app folder instead of making a new folder.
 
 ## What It Does
 
