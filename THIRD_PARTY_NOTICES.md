@@ -2,7 +2,7 @@
 
 This release bundles third-party components and assets. Their own license terms continue to apply.
 
-The PolyForm Noncommercial License 1.0.0 applies to E-Ink Frame Alternative software and firmware only. It does not re-license third-party components, runtimes, tools, or artwork and does not remove any attribution, share-alike, source, or notice obligations attached to them.
+The PolyForm Noncommercial License 1.0.0 applies to Ditherloom Suite software and firmware only. It does not re-license third-party components, runtimes, tools, or artwork and does not remove any attribution, share-alike, source, or notice obligations attached to them.
 
 ## OpenMoji
 

@@ -1,4 +1,4 @@
-# E-Ink Frame Alternative
+# Ditherloom Suite
 
 Windows client for compatible PicPak-style e-ink photo frames.
 
@@ -6,9 +6,11 @@ Windows client for compatible PicPak-style e-ink photo frames.
 
 Public downloads are temporarily paused while the firmware installer is being re-verified.
 
-When downloads reopen, first-time users should download the latest release package, create a folder on their hard drive that they will remember, extract the zip into that folder, then run `PicPakTool.exe`.
+When downloads reopen, first-time users should download the latest release package, create a folder on their hard drive that they will remember, extract the zip into that folder, then run `DitherloomSuite.exe`.
 
 For updates, use `About > Check for updates` inside the app. The updater installs into the same folder so saved gallery, backups, Wi-Fi details, and license acceptance are preserved. If updating manually, extract the new release over the existing app folder instead of making a new folder.
+
+See `WHATS_NEW.md` before updating if you want the short list of changes since the previous public build.
 
 ## What It Does
 
@@ -42,13 +44,13 @@ Use `About > Check for updates` inside the app to check the public GitHub releas
 
 ## License
 
-E-Ink Frame Alternative is licensed under the PolyForm Noncommercial License 1.0.0.
+Ditherloom Suite is licensed under the PolyForm Noncommercial License 1.0.0.
 
 Required Notice: Copyright 2026 Neil Cameron.
 
 See `LICENSE` for the full license terms.
 
-The PolyForm licence applies to E-Ink Frame Alternative software and firmware only. Bundled third-party components and OpenMoji artwork remain under their own licence terms.
+The PolyForm licence applies to Ditherloom Suite software and firmware only. Bundled third-party components and OpenMoji artwork remain under their own licence terms.
 
 ## Third-Party Components
 
