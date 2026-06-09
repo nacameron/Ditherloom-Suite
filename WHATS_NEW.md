@@ -1,4 +1,4 @@
-﻿# What's New In 0.2.4
+# What's New In 0.2.4
 
 This update is for users coming from the last public build, 0.2.3.
 
@@ -27,13 +27,16 @@ This update is for users coming from the last public build, 0.2.3.
 
 - Updated the app to recognise the current bundled firmware version: `step6-display-slot-1.26-button-wake-wifi-grace`.
 - Added What's New under the About menu so the bundled release notes can be read inside the app.
+- Made the What's New and update release-notes windows scrollable so longer notes are not clipped.
 - Added Folder Watch for automatic uploads while the app is open. It asks for permission during setup, prompts before starting on later app entry, and can target either the current Gallery frame or a modified-firmware Wi-Fi Frame Group.
 - Added clearer help text for Stock vs Modified workflows, firmware conversion, restoring stock firmware, timed connections, Wi-Fi troubleshooting, motion control, memos, and battery/deep-sleep behaviour.
 - Added Frame Groups help and controls for Wi-Fi-only group sends to modified-firmware frames.
 - Added frame nicknames and group membership controls for modified Wi-Fi frame groups.
 - Added a dedicated Memo page with a blank frame canvas, full-screen memo text, stickers above the text layer, and the same send/output controls as image work.
 - Added a bundled memo template picker with 78 named four-colour e-ink templates. Templates sit below text and stickers, keep their panel-safe colours, and use a template-aware render path to avoid crushing warm colours.
+- Improved template rendering so native panel colours stay solid and warm/intermediate template colours use ordered handling instead of being crushed out.
 - Added up to six sticker layers per composition. Stickers can be selected, moved, resized, rotated, changed, or removed.
+- Added a Clear All option in the sticker picker so users can remove every sticker from a composition without the picker re-adding one on apply.
 - Added OpenMoji-based sticker browsing with category filtering, cached previews, visible graphic selection, and attribution in Third Party Components.
 - Added selected-slot delete mode for deleting multiple gallery items at once.
 - Added a soft black frame colour option alongside the existing frame colours for the mockup and gallery thumbnails.
@@ -42,6 +45,7 @@ This update is for users coming from the last public build, 0.2.3.
 - Added live custom battery display support across modified USB, Bluetooth, and Wi-Fi routes where the frame exposes it.
 - Improved update messaging so users are told when an app update also includes firmware changes.
 - Preserved in-place updates so saved galleries, backups, Wi-Fi details, and licence acceptance stay in the existing app folder.
+- Added update-package compatibility for older public builds that still look for the original executable name during in-place update.
 - Improved app help with a How To section covering connecting, image processing, gallery work, memos, stickers, firmware conversion/revert, motion, backups, timed photos, and Wi-Fi troubleshooting.
 - Improved the third-party components window so bundled components and artwork attribution are visible from the About menu.
 
@@ -69,4 +73,3 @@ This update is for users coming from the last public build, 0.2.3.
 - If you use modified firmware, allow the frame to finish any flashing, backup, or restore workflow before disconnecting USB.
 - If your modified frame uses Wi-Fi, keep using the same app folder when updating so encrypted Wi-Fi details and library data remain available.
 - If you use Frame Groups, wake the target frames with a double click before group sends until scheduled wake/group delivery is expanded further.
-
