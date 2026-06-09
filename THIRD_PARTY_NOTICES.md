@@ -1,4 +1,4 @@
-# Third-Party Notices
+﻿# Third-Party Notices
 
 This release bundles third-party components and assets. Their own license terms continue to apply.
 
@@ -75,3 +75,4 @@ The PolyForm Noncommercial License 1.0.0 applies to Ditherloom Suite software an
 - License: GPLv2-or-later with bootloader exception.
 - Source: https://pyinstaller.org/
 - License: https://pyinstaller.org/en/stable/license.html
+
