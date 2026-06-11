@@ -1,6 +1,14 @@
-# What's New In 0.2.4
+﻿# What's New In 0.2.5
 
 This update is for users coming from the last public build, 0.2.3.
+
+## Emergency Restore Hotfix
+
+- Hardened Restore Stock Firmware for dead-frame recovery. Stock backups are now written back in smaller verified recovery blocks instead of one long flash write.
+- Added clearer restore progress text and recovery instructions so users can see which block is being written or verified.
+- Added hotfix-aware update checking. Future small fixes can be detected by build ID even when the public version number does not change.
+- Fixed source relinking for restored stock backups where cached names include an internal `sourceImage-###-` prefix.
+- Cleared the device information panel on disconnect so the app does not keep showing details from a frame that is no longer connected.
 
 ## Branding And First Run
 
@@ -56,7 +64,9 @@ This update is for users coming from the last public build, 0.2.3.
 - Stock users keep Gallery and Firmware workflows only. Modified users also get Memo and Frame Group workflows.
 - Stock USB no longer auto-syncs the library on connect, keeping the short stock USB window available for backup, serial read, conversion, or restore work.
 - Full stock backups are tied to the frame they came from. Users should keep the backup and serial number together.
-- Restore-to-stock guidance is clearer: use only the full backup from that same frame.
+- Restore-to-stock now accepts older backup folders, `summary.json`, or the full flash `.bin` from the backup.
+- Restore-to-stock now uses smaller verified flash blocks with retry instructions instead of one long write, so users with an existing backup folder can revive a dead frame through bootloader mode.
+- Restore-to-stock guidance is clearer: use only the full backup from that same frame, put a dead frame into bootloader mode first, and keep the frame plugged in until the app says restore is complete.
 - Added clearer prompts for making a full stock backup, using an existing backup, or deliberately skipping backup before flashing modified firmware.
 
 ## Privacy And Library Handling
@@ -73,3 +83,4 @@ This update is for users coming from the last public build, 0.2.3.
 - If you use modified firmware, allow the frame to finish any flashing, backup, or restore workflow before disconnecting USB.
 - If your modified frame uses Wi-Fi, keep using the same app folder when updating so encrypted Wi-Fi details and library data remain available.
 - If you use Frame Groups, wake the target frames with a double click before group sends until scheduled wake/group delivery is expanded further.
+
