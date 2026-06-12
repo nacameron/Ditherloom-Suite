@@ -7,8 +7,9 @@ This update is for users coming from the last public build, 0.2.3.
 - Hardened Restore Stock Firmware for dead-frame recovery. Stock backups are now written back in smaller verified recovery blocks instead of one long flash write.
 - Added clearer restore progress text and recovery instructions so users can see which block is being written or verified.
 - Added hotfix-aware update checking. Future small fixes can be detected by build ID even when the public version number does not change.
-- Fixed source relinking for restored stock backups where cached names include an internal `sourceImage-###-` prefix.
+- Fixed source relinking for restored stock backups where cached gallery names differ from the original filenames.
 - Cleared the device information panel on disconnect so the app does not keep showing details from a frame that is no longer connected.
+- Fixed the update-available window so firmware change notes and What's New each have their own scrollable area.
 
 ## Branding And First Run
 
