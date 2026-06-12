@@ -40,7 +40,7 @@ This update is for users coming from the last public build, 0.2.3.
 
 ## App
 
-- Updated the app to recognise the current bundled firmware version: `step6-display-slot-1.26-button-wake-wifi-grace`.
+- Updated the app to recognise the current bundled firmware version: `step6-display-slot-1.28-eraseall`.
 - Added What's New under the About menu so the bundled release notes can be read inside the app.
 - Made the What's New and update release-notes windows scrollable so longer notes are not clipped.
 - Added Folder Watch for automatic uploads while the app is open. It asks for permission during setup, prompts before starting on later app entry, and can target either the current Gallery frame or a modified-firmware Wi-Fi Frame Group.
