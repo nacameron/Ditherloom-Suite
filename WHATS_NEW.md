@@ -2,6 +2,12 @@
 
 This update is for users coming from the last public build, 0.2.3.
 
+## 20260613.3 Hotfix
+
+- Added a standalone updater for older installs where the original in-app updater closes but cannot replace the running executable.
+- If Check for Updates closes and does not reopen, download `Ditherloom-Suite-v0.2.6-Updater.ps1` from the release page, run it, and select the existing app folder.
+- This stays on version 0.2.6 and uses a newer build ID so every earlier 0.2.6 build can still see the hotfix.
+
 ## 20260613.2 Hotfix
 
 - The in-app updater now closes any remaining Ditherloom Suite process running from the same install folder before copying the update, then reopens the app.
