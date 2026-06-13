@@ -2,6 +2,11 @@
 
 This update is for users coming from the last public build, 0.2.3.
 
+## 20260613.2 Hotfix
+
+- The in-app updater now closes any remaining Ditherloom Suite process running from the same install folder before copying the update, then reopens the app.
+- This stays on version 0.2.6 and uses the build ID so earlier 0.2.6 builds still see the hotfix.
+
 ## Self-Update Hotfix
 
 - Fixed the in-place updater so downloaded releases are applied to the existing app folder and the app reopens after the update.
