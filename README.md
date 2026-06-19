@@ -28,6 +28,10 @@ Create a folder somewhere on your hard drive that you will remember, extract the
 - Use `Delete Slot` to remove the selected image.
 - Use `Delete All` only when you want to clear every image from the selected frame.
 
+## Privacy
+
+Your files, your PC. Ditherloom Suite keeps your images, source paths, encrypted library records, Wi-Fi details, backups, and frame data on your own computer and frame. They are not sent to us or to any outside service. If a future feature ever needs to send data outside your environment, it will be a clear, explicit opt-in choice.
+
 ## Calibration
 
 Use `Calibrate` to send the calibration target to an empty slot, then provide a clear photo of the frame. The app will estimate the visible screen area and let you fine tune each edge in 1-pixel steps.

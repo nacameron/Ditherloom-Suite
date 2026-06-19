@@ -1,10 +1,17 @@
-﻿# What's New In 0.2.6
+﻿# What's New In 0.2.7
 
 This update is for users coming from the last public build, 0.2.3.
 
+## 0.2.7 Updater Hotfix
+
+- Hardened the in-app updater so it waits for the old app process to exit, waits for Windows to release the executable, retries the copy, verifies the updated executable, then reopens from the installed folder.
+- Hardened the standalone updater script in the public release package for older installs whose embedded updater closes but does not apply the replacement.
+- Added an explicit `I Decline` path on the licence screen. Declining is recorded separately and closes the app; only pressing `I Agree` records acceptance.
+- Kept the same saved app folder, `app_state`, encrypted Wi-Fi details, library records, backups, and licence acceptance during update.
+
 ## Current Development Build
 
-- Updated the bundled modified firmware to `step6-display-slot-1.31-startup-art`.
+- Updated the bundled modified firmware to `step6-display-slot-1.84-display-schedule`.
 - Added the Gateway cutover for modified firmware traffic. Custom USB, custom BLE, and Wi-Fi now route app actions through the same Gateway client layer, while stock firmware stays on its stock routes.
 - Added persistent Gateway Library ID handling so modified frames are identified by serial plus Library ID instead of connection method.
 - Hardened frame privacy isolation. Connecting or syncing a different modified frame blanks the visible gallery and mockup first, then renders only the manifest for the connected Gateway Library ID.
