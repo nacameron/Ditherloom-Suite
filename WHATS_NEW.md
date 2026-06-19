@@ -2,6 +2,20 @@
 
 This update is for users coming from the last public build, 0.2.3.
 
+## Current Development Build
+
+- Updated the bundled modified firmware to `step6-display-slot-1.31-startup-art`.
+- Added the Gateway cutover for modified firmware traffic. Custom USB, custom BLE, and Wi-Fi now route app actions through the same Gateway client layer, while stock firmware stays on its stock routes.
+- Added persistent Gateway Library ID handling so modified frames are identified by serial plus Library ID instead of connection method.
+- Hardened frame privacy isolation. Connecting or syncing a different modified frame blanks the visible gallery and mockup first, then renders only the manifest for the connected Gateway Library ID.
+- Changed modified-firmware preview sync to be manifest-first. The app trusts the Gateway manifest, rebuilds local thumbnails from encrypted source/packed data where possible, and uses downloaded frame previews only as a relink aid when the original source is missing.
+- Added encrypted source filename/path metadata round-tripping through the app library and frame slot metadata where supported.
+- Added visual relinking improvements, including frame-reference previews and folder thumbnail selection for cases where automatic source matching is uncertain.
+- Locked confirmed edge-mask and image-effect render output with build-time checks so future builds fail if those renderers drift without explicit signoff.
+- Added firmware-owned Ditherloom Suite Powered startup art for first custom-firmware boot after stock-to-custom conversion. It does not use a gallery slot.
+- Tightened firmware update prompts so the app does not offer an older bundled firmware over a newer frame version.
+- Added minute/hour/day/week timer fields for modified-firmware `Delete after` timers and a separate preserving `Repeat display` schedule that shows a saved photo or memo for a chosen time, rotates away, then shows it again later without deleting the slot.
+
 ## 20260613.3 Hotfix
 
 - Added a standalone updater for older installs where the original in-app updater closes but cannot replace the running executable.
@@ -39,19 +53,20 @@ This update is for users coming from the last public build, 0.2.3.
 ## Modified Firmware
 
 - Added safer deep-sleep behaviour so modified frames can return to low-power sleep after app work, Wi-Fi windows, button actions, and internal timed actions.
-- Added frame-side timed memo expiry. A temporary memo can now be shown for a selected number of minutes, then the frame deletes it, chooses another image, and returns to sleep without needing the app to stay connected.
-- Added frame-side timed photo expiry for modified firmware. A gallery photo can now be displayed for a selected number of minutes, then removed by the frame with a replacement image selected automatically.
+- Added frame-side timed memo expiry. A temporary memo can now be deleted after a selected minute/hour/day/week duration; the frame then chooses another image and returns to sleep without needing the app to stay connected.
+- Added frame-side timed photo expiry for modified firmware. A gallery photo can now be deleted after a selected minute/hour/day/week duration, then removed by the frame with a replacement image selected automatically.
+- Added a separate modified-firmware repeat-display schedule for photos and memos. Scheduled content is preserved, not self-destructed: the frame shows it for the chosen duration, rotates to something else, and parks it until the next scheduled appearance.
 - Added a daily low-power battery maintenance wake. The frame can briefly wake, check battery level, show the Charge Me screen if needed, then go back to sleep.
 - Added the new Charge Me screen and bundled a documentation snapshot of it.
 - Improved custom battery reporting. Modified firmware now reports battery percentage and voltage from the frame rather than relying on old app-side guesses.
 - Kept the protected button flow: single click arms motion, left tilt shows previous, right tilt shows next, shake shows random, long press wakes Bluetooth, and double click wakes Wi-Fi when credentials are stored.
 - Improved Wi-Fi wake handling. Wi-Fi can be woken for a timed window rather than left running.
 - Added support for displaying a setup message if Wi-Fi is requested on the frame before credentials have been stored.
-- Added modified-firmware manifest handling so USB, Bluetooth, and Wi-Fi routes can agree on the same slot library.
+- Added modified-firmware manifest handling so USB, Bluetooth, and Wi-Fi routes can agree on the same slot library. Current development builds now route those custom transports through the Gateway layer.
 
 ## App
 
-- Updated the app to recognise the current bundled firmware version: `step6-display-slot-1.28-eraseall`.
+- Updated the app to recognise the current bundled firmware version: `step6-display-slot-1.31-startup-art`.
 - Added What's New under the About menu so the bundled release notes can be read inside the app.
 - Made the What's New and update release-notes windows scrollable so longer notes are not clipped.
 - Added Folder Watch for automatic uploads while the app is open. It asks for permission during setup, prompts before starting on later app entry, and can target either the current Gallery frame or a modified-firmware Wi-Fi Frame Group.
@@ -89,9 +104,9 @@ This update is for users coming from the last public build, 0.2.3.
 
 ## Privacy And Library Handling
 
-- Gallery thumbnails and the active mockup clear when the frame disconnects.
-- The app continues to keep source images and settings per device so later edits avoid double-dithering where the source is available.
-- Per-device libraries are keyed to the frame identity so stock and modified connection routes can stay aligned for the same physical frame.
+- Gallery thumbnails and the active mockup clear when the frame disconnects, and modified-firmware connect/sync clears the old view until the connected Gateway Library ID has been read.
+- The app continues to keep source images and settings per frame library so later edits avoid double-dithering where the source is available.
+- Per-device libraries are keyed to frame identity. Modified firmware uses serial plus Gateway Library ID so stock and modified connection routes can stay aligned for the same physical frame without showing one frame's gallery on another.
 - Deleted slots are removed from the frame and from the app's remembered library/cache.
 - Saved Wi-Fi details remain encrypted and tied to the relevant frame profile.
 
