@@ -1,8 +1,16 @@
 ﻿# What's New In 0.2.8
 
-This update is for users coming from the last public build, 0.2.7.
+This hotfix is for users on the earlier 0.2.8 public build.
+
+## 20260622.2 Auto-Update Hotfix
+
+- Fixed a public auto-update startup failure where Windows could reopen the one-file app before the replaced executable and embedded Python runtime had fully settled.
+- Public builds now extract their packaged Python runtime beside the app instead of relying on the Windows temp extraction location.
+- The in-app updater and standalone updater now verify the copied app executable hash before restart and wait briefly before launching the replacement.
 
 ## 0.2.8 Gateway And Library Lockdown
+
+This update is for users coming from the previous public build, 0.2.7.
 
 - Updated the bundled modified firmware to `step6-display-slot-1.109-ble-b64-static`.
 - Kept all modified-firmware app communication on the Gateway layer for Custom USB, custom BLE, and Wi-Fi.

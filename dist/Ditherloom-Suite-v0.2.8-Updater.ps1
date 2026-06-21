@@ -4,7 +4,8 @@ param(
 
 $ErrorActionPreference = 'Stop'
 $packageUrl = 'https://github.com/nacameron/Ditherloom-Suite/releases/download/v0.2.8/Ditherloom-Suite-v0.2.8.zip'
-$expectedHash = '562B03E0152CC7FFC20FFEE1EFE703EA1E697469EAE613E048B99CDA15D90004'
+$expectedHash = '34832B2F3C9829E337361A5FDB89A7852858143C3596F7EF85390DAF74FA8772'
+$expectedExeHash = '8456E40A4ED5476B10265ECDBA870C14C8EB795868AECD31B7DDA5236C3ABD8B'
 $packageName = 'Ditherloom-Suite-v0.2.8.zip'
 
 Add-Type -AssemblyName System.Windows.Forms
@@ -100,6 +101,39 @@ function Copy-UpdateWithRetry([string]$sourceRoot, [string]$targetRoot) {
     }
 }
 
+function Wait-UpdatedExeStable([string]$path, [string]$expectedHash, [int]$timeoutSeconds) {
+    $deadline = (Get-Date).AddSeconds($timeoutSeconds)
+    $lastLength = -1
+    $stableCount = 0
+    while ($true) {
+        if (Test-Path -LiteralPath $path) {
+            try {
+                $item = Get-Item -LiteralPath $path
+                $hash = (Get-FileHash -LiteralPath $path -Algorithm SHA256).Hash.ToUpperInvariant()
+                if ($hash -eq $expectedHash) {
+                    if ($item.Length -eq $lastLength) {
+                        $stableCount += 1
+                    } else {
+                        $stableCount = 0
+                        $lastLength = $item.Length
+                    }
+                    if ($stableCount -ge 2) {
+                        return
+                    }
+                } else {
+                    Write-Host ("Copied exe hash mismatch. Expected " + $expectedHash + " got " + $hash)
+                }
+            } catch {
+                Write-Host ("Waiting for updated exe to settle: " + $_.Exception.Message)
+            }
+        }
+        if ((Get-Date) -gt $deadline) {
+            throw "Updated app executable did not verify before restart: $path"
+        }
+        Start-Sleep -Milliseconds 500
+    }
+}
+
 function Write-UpdateContinuityMarker([string]$target) {
     $markerDir = Join-Path $target 'app_state'
     New-Item -ItemType Directory -Force -Path $markerDir | Out-Null
@@ -108,7 +142,7 @@ function Write-UpdateContinuityMarker([string]$target) {
         appName = 'Ditherloom Suite'
         purpose = 'in-place-update'
         targetVersion = '0.2.8'
-        targetBuildId = '20260622.1'
+        targetBuildId = '20260622.2'
         writtenAt = (Get-Date).ToUniversalTime().ToString('o')
     }
     $payload | ConvertTo-Json -Depth 4 | Set-Content -LiteralPath $markerPath -Encoding UTF8
@@ -151,6 +185,9 @@ Copy-UpdateWithRetry $extract $target
 if (-not (Test-Path -LiteralPath $restart)) {
     throw "Updated app executable was not found: $restart"
 }
+Write-Host "Verifying updated executable..."
+Wait-UpdatedExeStable $restart $expectedExeHash 45
+Start-Sleep -Seconds 2
 
 Write-Host "Starting Ditherloom Suite..."
 Start-Process -FilePath $restart -WorkingDirectory $target
