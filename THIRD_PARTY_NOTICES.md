@@ -2,7 +2,11 @@
 
 This release bundles third-party components and assets. Their own license terms continue to apply.
 
-The PolyForm Noncommercial License 1.0.0 applies to Ditherloom Suite software and firmware only. It does not re-license third-party components, runtimes, tools, or artwork and does not remove any attribution, share-alike, source, or notice obligations attached to them.
+Neil Cameron claims copyright in the Ditherloom Suite desktop app, PicPak image tools, helper scripts, documentation, original Ditherloom Suite branding/artwork/templates, custom ESP32-C3 firmware source tree, bundled custom firmware binary images, firmware update packages, firmware-owned startup artwork, modified-firmware features, and Gateway protocol implementation used by modified PicPak frames.
+
+Those project-owned Ditherloom Suite materials are offered under the PolyForm Noncommercial License 1.0.0 unless a separate written licence says otherwise.
+
+The project copyright notice and PolyForm licence do not re-license third-party components, runtimes, tools, OpenMoji artwork, ESP-IDF, esptool, or stock/original PicPak firmware, and they do not remove any attribution, share-alike, source, or notice obligations attached to them.
 
 ## OpenMoji
 

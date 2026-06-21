@@ -2,6 +2,12 @@
 Required Notice: Ditherloom Suite name, logo, branding, and original artwork are � 2026 Neil Cameron.
 Required Notice: Ditherloom Suite templates bundled with the app are � 2026 Neil Cameron.
 
+Required Notice: Ditherloom Suite custom ESP32-C3 firmware, bundled firmware binaries, firmware source, Gateway protocol implementation, firmware-owned startup artwork, modified-firmware features, and related firmware update/flashing scripts are � 2026 Neil Cameron.
+
+Copyright Scope Notice: Neil Cameron claims copyright in the Ditherloom Suite desktop app, PicPak image tools, helper scripts, documentation, original Ditherloom Suite branding/artwork/templates, custom ESP32-C3 firmware source tree, bundled custom firmware binary images, firmware update packages, firmware-owned startup artwork, modified-firmware features, and Gateway protocol implementation used by modified PicPak frames.
+
+License Scope Notice: Those project-owned Ditherloom Suite materials are offered under the PolyForm Noncommercial License 1.0.0 below unless a separate written licence says otherwise. Stock/original PicPak firmware and third-party components are not owned or relicensed by this notice and remain under their own terms.
+
 # PolyForm Noncommercial License 1.0.0
 
 <https://polyformproject.org/licenses/noncommercial/1.0.0>

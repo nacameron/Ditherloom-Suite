@@ -13,4 +13,3 @@ __pycache__/
 *.png
 *.webp
 *.bmp
-dist/*.zip

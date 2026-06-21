@@ -1,6 +1,18 @@
-﻿# What's New In 0.2.7
+﻿# What's New In 0.2.8
 
-This update is for users coming from the last public build, 0.2.3.
+This update is for users coming from the last public build, 0.2.7.
+
+## 0.2.8 Gateway And Library Lockdown
+
+- Updated the bundled modified firmware to `step6-display-slot-1.109-ble-b64-static`.
+- Kept all modified-firmware app communication on the Gateway layer for Custom USB, custom BLE, and Wi-Fi.
+- Hardened custom BLE uploads with the verified Gateway B64 write route and locked regression checks.
+- Fixed transformed thumbnail and mockup handling so linked or relinked source images rebuild from source plus frame-stored transform metadata.
+- Locked template rendering, template text colours, memo rendering, edge masks, image effects, Wi-Fi Gateway behaviour, and timed-slot behaviour with build-time checks.
+- Fixed `Delete after` and `Repeat display` layout and library cleanup. A timed delete now clears stale gallery/library state when the frame reports the slot is gone.
+- Fixed the text outline control row so the pixel amount appears after `Outline Px`.
+- Preserved encrypted Wi-Fi credentials, frame nickname, calibration metadata, source folders, and Gateway Library ID alignment across custom connection methods.
+- Added stronger startup/update cleanup so older app copies do not keep blocking replacement during public updates.
 
 ## 0.2.7 Updater Hotfix
 
@@ -11,7 +23,7 @@ This update is for users coming from the last public build, 0.2.3.
 
 ## Current Development Build
 
-- Updated the bundled modified firmware to `step6-display-slot-1.84-display-schedule`.
+- Updated the bundled modified firmware to `step6-display-slot-1.96-sleep-failsafe`.
 - Added the Gateway cutover for modified firmware traffic. Custom USB, custom BLE, and Wi-Fi now route app actions through the same Gateway client layer, while stock firmware stays on its stock routes.
 - Added persistent Gateway Library ID handling so modified frames are identified by serial plus Library ID instead of connection method.
 - Hardened frame privacy isolation. Connecting or syncing a different modified frame blanks the visible gallery and mockup first, then renders only the manifest for the connected Gateway Library ID.
@@ -22,6 +34,7 @@ This update is for users coming from the last public build, 0.2.3.
 - Added firmware-owned Ditherloom Suite Powered startup art for first custom-firmware boot after stock-to-custom conversion. It does not use a gallery slot.
 - Tightened firmware update prompts so the app does not offer an older bundled firmware over a newer frame version.
 - Added minute/hour/day/week timer fields for modified-firmware `Delete after` timers and a separate preserving `Repeat display` schedule that shows a saved photo or memo for a chosen time, rotates away, then shows it again later without deleting the slot.
+- Added a firmware sleep failsafe so a modified frame enters deep sleep after USB, Wi-Fi, or BLE app activity ends, even when no rotation or memo timer is active. Added `SLEEPINFO` diagnostics for proving what is blocking sleep.
 
 ## 20260613.3 Hotfix
 
@@ -66,8 +79,9 @@ This update is for users coming from the last public build, 0.2.3.
 - Added a daily low-power battery maintenance wake. The frame can briefly wake, check battery level, show the Charge Me screen if needed, then go back to sleep.
 - Added the new Charge Me screen and bundled a documentation snapshot of it.
 - Improved custom battery reporting. Modified firmware now reports battery percentage and voltage from the frame rather than relying on old app-side guesses.
-- Kept the protected button flow: single click arms motion, left tilt shows previous, right tilt shows next, shake shows random, long press wakes Bluetooth, and double click wakes Wi-Fi when credentials are stored.
+- Kept the protected button flow: single click arms motion, left tilt shows previous, right tilt shows next, shake shows random, long press wakes Bluetooth, and double click wakes Wi-Fi when credentials are stored. After Wi-Fi successfully joins and opens the Gateway, the button light stays solid for about five seconds.
 - Improved Wi-Fi wake handling. Wi-Fi can be woken for a timed window rather than left running.
+- Added an explicit `Delete Wi-Fi` control for modified frames. Firmware updates, normal connect/read flows, and image delete/erase actions must preserve stored Wi-Fi credentials unless the user chooses Delete Wi-Fi.
 - Added support for displaying a setup message if Wi-Fi is requested on the frame before credentials have been stored.
 - Added modified-firmware manifest handling so USB, Bluetooth, and Wi-Fi routes can agree on the same slot library. Current development builds now route those custom transports through the Gateway layer.
 
