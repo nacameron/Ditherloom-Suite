@@ -1,13 +1,14 @@
-# Ditherloom Suite v0.2.8 build 20260623.1
+# Ditherloom Suite v0.2.8 build 20260623.2
 
-This build keeps the public app version at `0.2.8` and updates the internal build ID to `20260623.1` so existing installs can detect the update without a user-visible version bump.
+This build keeps the public app version at `0.2.8` and updates the internal build ID to `20260623.2` so existing installs can detect the update without a user-visible version bump.
 
 ## Included
 
-- Gateway library guardrails for canonical custom-firmware routing.
-- Locked Wi-Fi rehydrate and read-path regression checks.
+- Gateway Library ID isolation now opens the correct per-frame library from the live custom-firmware handshake.
+- Grey custom-frame thumbnails now load the frame preview through the Gateway as a visual relink aid instead of staying grey.
+- Frame nicknames are restored after the Gateway Library ID/profile is finalized on custom USB, custom BLE, and Wi-Fi.
 - Public client package rebuilt from the verified app build.
-- Current tested firmware release package approved for publication.
+- Current tested firmware release package remains approved for publication.
 
 ## Firmware Baseline
 

@@ -2,6 +2,13 @@
 
 This hotfix is for users on the earlier 0.2.8 public build.
 
+## 20260623.2 Gateway Library Hotfix
+
+- Fixed custom-firmware Library ID isolation so the app opens the connected frame's library from the live Gateway handshake instead of reusing another frame's cached library.
+- Fixed grey custom-frame thumbnails so missing local previews are filled with a Gateway-downloaded frame preview for visual relinking.
+- Fixed frame nickname display after custom USB, custom BLE, or Wi-Fi Gateway identity is finalized.
+- Kept the visible app version at `0.2.8`; this build uses build ID `20260623.2` so auto-update detects it as newer.
+
 ## 20260622.2 Auto-Update Hotfix
 
 - Fixed a public auto-update startup failure where Windows could reopen the one-file app before the replaced executable and embedded Python runtime had fully settled.
