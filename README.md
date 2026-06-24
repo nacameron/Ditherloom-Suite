@@ -30,7 +30,11 @@ Create a folder somewhere on your hard drive that you will remember, extract the
 
 ## Privacy
 
-Your files, your PC. Ditherloom Suite keeps your images, source paths, encrypted library records, Wi-Fi details, backups, and frame data on your own computer and frame. They are not sent to us or to any outside service. If a future feature ever needs to send data outside your environment, it will be a clear, explicit opt-in choice.
+Your files, your PC. Ditherloom Suite keeps your images, source paths, encrypted library records, Wi-Fi details, backups, and frame data on your own computer and frame. They are not sent to us or to any outside service.
+
+Home Assistant setup stores only the frame/Gateway connection settings needed for that integration, such as the Home Assistant address, Library ID, reserved slot, topic base, and scheduled wake timing. It does not send your personal source photos, app library, relink cache, thumbnails, or frame backups to Home Assistant. Home Assistant-rendered content is generated and served by the Home Assistant system you choose. If your Home Assistant runs locally, that content stays within your local Home Assistant network path. If you use Home Assistant Cloud, a reverse proxy, or another remote access service, that is part of your Home Assistant/network privacy setup rather than this app uploading your files.
+
+If a future feature ever needs to send data outside your environment, it will be a clear, explicit opt-in choice.
 
 ## Calibration
 
@@ -40,5 +44,5 @@ Use `Calibrate` to send the calibration target to an empty slot, then provide a 
 
 This software is provided for personal, noncommercial use only. You may use the client as supplied, but you may not modify, reverse engineer, decompile, redistribute modified copies, sell, rent, sublicense, or use it commercially without separate written permission.
 
-Ditherloom Suite name, logo, branding, and original artwork are Â© 2026 Neil Cameron.
-Ditherloom Suite templates bundled with the app are Â© 2026 Neil Cameron.
+Ditherloom Suite name, logo, branding, and original artwork are (c) 2026 Neil Cameron.
+Ditherloom Suite templates bundled with the app are (c) 2026 Neil Cameron.

@@ -2,6 +2,15 @@
 
 This hotfix is for users on the earlier 0.2.8 public build.
 
+## 20260624.1 Home Assistant Frame Handshake
+
+- Changed Home Assistant scheduled wake to the frame-initiated handshake model. The frame wakes, opens the Wi-Fi Gateway, contacts Home Assistant with `frame_awake`, receives Gateway jobs, then sleeps after completion/no-jobs or the safety cap.
+- Removed the `Max jobs per wake` setting. Home Assistant now decides when work is finished and the firmware sleeps from the completion/no-jobs handshake.
+- Added Home Assistant schedule status to the app so Save/Read can show the frame's real `SLEEPINFO` timer state instead of only showing saved setup fields.
+- Added Home Assistant How To and Privacy wording. The app stores setup/routing fields only; weather, cards, entities, and generated content remain controlled by the user's Home Assistant system.
+- Kept the visible app version at `0.2.8`; this build uses build ID `20260624.1` so auto-update detects it as newer.
+- Updated the bundled modified firmware to `step6-display-slot-1.114-ha-frame-initiated`.
+
 ## 20260623.2 Gateway Library Hotfix
 
 - Fixed custom-firmware Library ID isolation so the app opens the connected frame's library from the live Gateway handshake instead of reusing another frame's cached library.
