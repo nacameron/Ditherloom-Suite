@@ -2,6 +2,15 @@
 
 This hotfix is for users on the earlier 0.2.8 public build.
 
+## 20260629.1 Home Assistant Setup Hotfix
+
+- Fixed Home Assistant setup so the app keeps the Long-Lived Access Token app-local, strips pasted smart quotes or surrounding text before use, and sends only a clean token to Home Assistant discovery.
+- Fixed Home Assistant frame config saves so the frame receives only the compact firmware runtime config, keeping larger app-local setup fields out of the 768-byte `HACONFIG` storage limit.
+- Fixed Home Assistant slot rotation saves so the app marks the reserved/extra HA slots as HA-owned through the Gateway before applying HA rotation.
+- Changed Home Assistant wake safety and HA rotation timing fields to minutes/hours in the app UI while keeping the compact Gateway/firmware payload in seconds.
+- Added guardrails for the Home Assistant token path, compact frame config path, HA slot-class route, and Stock/Modified startup chooser layout so these behaviours cannot drift silently.
+- Kept the visible app version at `0.2.8`; this build uses build ID `20260629.1` so auto-update detects it as newer.
+
 ## 20260624.1 Home Assistant Frame Handshake
 
 - Changed Home Assistant scheduled wake to the frame-initiated handshake model. The frame wakes, opens the Wi-Fi Gateway, contacts Home Assistant with `frame_awake`, receives Gateway jobs, then sleeps after completion/no-jobs or the safety cap.
