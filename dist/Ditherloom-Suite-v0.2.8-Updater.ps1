@@ -4,8 +4,8 @@ param(
 
 $ErrorActionPreference = 'Stop'
 $packageUrl = 'https://github.com/nacameron/Ditherloom-Suite/releases/download/v0.2.8/Ditherloom-Suite-v0.2.8.zip'
-$expectedHash = '83CE28512E176FE47E571AAC85F94479D8739AB983E44F507C77A13845D4C2D4'
-$expectedExeHash = '3A2F555C4575BC6082D06D4FB5C37CF2989D881875128259AE32EC4BCF9A3C73'
+$expectedHash = '8F27C33C0BAC992485614B1BC7B87D207A9B8A67FD15853A90B0869F3A347115'
+$expectedExeHash = '26DF3406D886D27C0300F829298413BD54C42173413D6CD2ACE4B6ACE8312351'
 $packageName = 'Ditherloom-Suite-v0.2.8.zip'
 
 Add-Type -AssemblyName System.Windows.Forms
