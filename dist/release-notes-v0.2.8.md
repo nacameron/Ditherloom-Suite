@@ -1,22 +1,21 @@
-# Ditherloom Suite v0.2.8 build 20260629.4
+# Ditherloom Suite v0.2.8 build 20260703.2
 
 This build keeps the app version at 0.2.8 and updates the build ID so existing installs can detect it as an update.
 
 ## Fixed
 
-- Home Assistant slot rotation is now firmware-owned and sequential by physical HA slot number.
-- The HA rotation list is sorted internally, so a reserved-first setup such as `445,443,444` rotates as `443 -> 444 -> 445`.
-- When Home Assistant refreshes a populated HA slot, the HA rotation cursor resets so the next timed rotation starts from the lowest populated HA slot.
-- HA slot uploads now preserve the slot's HA ownership metadata instead of reverting the slot class during image replacement.
-- Normal image rotation, memo slots, random rotation, display rendering, Gateway command format, Wi-Fi settings, USB, and BLE paths are unchanged.
-- Project guardrails now block drift away from the HA-only cursor, populated-slot check, sorted HA order, and reset-on-HA-upload rule.
+- Fixed the custom Wi-Fi Gateway listener startup path used after the frame joins saved Wi-Fi.
+- The frame keeps the locked 12KB Wi-Fi Gateway listener stack, but now reserves it statically so the listener does not fail with `server_errno=12` after Wi-Fi association.
+- The single Wi-Fi Gateway listener and single-connection rule remain locked.
+- Home Assistant delivery, display rendering, packed image format, slot layout, Wi-Fi credentials, USB, and BLE paths are unchanged.
+- Project guardrails now block drift back to heap-backed Wi-Fi listener task creation.
 
 ## Firmware
 
-- Bundled custom firmware: `step6-display-slot-1.122-ha-rotation-ascending`
-- Firmware SHA-256: `72EFE57C077ABED1B259FE45E0220807298F1EA20AE8846419B213EA7B0E35EB`
+- Bundled custom firmware: `step6-display-slot-1.133-wifi-static-listener`
+- Firmware SHA-256: `9DB18FC5F5D69189BB4C1DB61124DDB967FEB1639F72E87F55022C81DAA1CCCF`
 
 ## Package
 
-- App exe SHA-256: `3A2F555C4575BC6082D06D4FB5C37CF2989D881875128259AE32EC4BCF9A3C73`
-- Release zip SHA-256: `83CE28512E176FE47E571AAC85F94479D8739AB983E44F507C77A13845D4C2D4`
+- App exe SHA-256: `F2C8C1094E5A6F2B3C34062670B2D8220A76907E49A622BD821D295D2D3C4DC4`
+- Release zip SHA-256: `8495A677CCFEA2A7E0E99DE62B7B9F5CACDB8C95351C74B6214B950CBCB683B2`
