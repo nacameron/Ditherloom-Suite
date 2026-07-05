@@ -4,8 +4,8 @@ param(
 
 $ErrorActionPreference = 'Stop'
 $packageUrl = 'https://github.com/nacameron/Ditherloom-Suite/releases/download/v0.2.8/Ditherloom-Suite-v0.2.8.zip'
-$expectedHash = '001E4650B1F32487DDB7042571968CFD63286B0AEE44FC8865A9BC96545126F9'
-$expectedExeHash = '60CC22DD8CEB53981E19338DE9CD8158116F885BB22496ABBAC35D9A17989225'
+$expectedHash = '49769F5C50B733340F6AC2854E3F2BB19733D69303829B436989735C6C82115E'
+$expectedExeHash = 'F3F10A94D31C1D5612880983E253E73B67C5152591A0868E18E6C90BE8898708'
 $packageName = 'Ditherloom-Suite-v0.2.8.zip'
 
 Add-Type -AssemblyName System.Windows.Forms
@@ -142,7 +142,7 @@ function Write-UpdateContinuityMarker([string]$target) {
         appName = 'Ditherloom Suite'
         purpose = 'in-place-update'
         targetVersion = '0.2.8'
-        targetBuildId = '20260703.3'
+        targetBuildId = '20260705.1'
         writtenAt = (Get-Date).ToUniversalTime().ToString('o')
     }
     $payload | ConvertTo-Json -Depth 4 | Set-Content -LiteralPath $markerPath -Encoding UTF8
