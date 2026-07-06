@@ -2,6 +2,21 @@
 
 This hotfix is for users on the earlier 0.2.8 public build.
 
+## 20260707.2 Home Assistant Rotation Timer Hotfix
+
+- Fixed the modified firmware's Home Assistant slot rotation timer so awake time is counted and the remaining rotation countdown is preserved across sleep.
+- Kept the Home Assistant server contact cadence separate from the local HA slot rotation cadence.
+- Restored the locked Home Assistant delivery display rule: incoming HA jobs are written silently, then `HACOMPLETE all_jobs_complete` displays only the next valid HA rotation slot once.
+- Preserved the existing Gateway-only communication path, single Wi-Fi Gateway listener, Wi-Fi settings, slot layout, image format, app schema, USB path, BLE path, and Home Assistant component contract.
+- Kept the visible app version at `0.2.8`; this build uses build ID `20260707.2` so auto-update detects it as newer.
+
+## 20260707.1 Home Assistant Assigned Slots And Firmware Hotfix
+
+- Changed the Home Assistant setup wording to one `Assigned slots` field. Users can enter any valid frame slot numbers or ranges up to the frame's physical slot capacity.
+- Kept Home Assistant slot allocation separate from the populated HA rotation display cycle, so empty assigned HA slots do not erase the saved assigned-slot list.
+- Updated the bundled modified firmware to `step6-display-slot-1.134-wifi-button-recover`.
+- Kept the visible app version at `0.2.8`; this build uses build ID `20260707.1` so auto-update detects it as newer.
+
 ## 20260629.1 Home Assistant Setup Hotfix
 
 - Fixed Home Assistant setup so the app keeps the Long-Lived Access Token app-local, strips pasted smart quotes or surrounding text before use, and sends only a clean token to Home Assistant discovery.
