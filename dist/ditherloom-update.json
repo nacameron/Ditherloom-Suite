@@ -1,8 +1,8 @@
 {
     "appName":  "Ditherloom Suite",
-    "appVersion":  "0.2.8",
-    "buildId":  "20260707.2",
-    "buildDateUtc":  "2026-07-06T23:52:07.5806795Z",
-    "packageName":  "Ditherloom-Suite-v0.2.8.zip",
-    "packageSha256":  "37E06E9CDC99DD895C3536D3F4686CA69E93169A1EA7035F01E0C9A028B073D4"
+    "appVersion":  "0.2.9",
+    "buildId":  "20260711.1",
+    "buildDateUtc":  "2026-07-11T07:55:50.9030935Z",
+    "packageName":  "Ditherloom-Suite-v0.2.9.zip",
+    "packageSha256":  "AAD33BA8A0E458DA90B27D412459A05FA3E6260960CAEC39D2AF28289330B620"
 }

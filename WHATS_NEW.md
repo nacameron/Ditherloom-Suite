@@ -1,6 +1,13 @@
-﻿# What's New In 0.2.8
+﻿# What's New In 0.2.9
 
-This hotfix is for users on the earlier 0.2.8 public build.
+This update is for users on the earlier 0.2.8 public build.
+
+## 20260711.1 Interrupted Firmware Update Recovery
+
+- Added automatic complete-image retries at progressively safer USB transfer speeds when a firmware update is interrupted.
+- Added an explicit recovery route for frames that cannot return their Ditherloom identity after an incomplete firmware write.
+- Preserved the stock/custom firmware safety boundary: recovery requires confirmation that the frame already ran Ditherloom custom firmware.
+- Updated the visible app version to `0.2.9`; this build uses build ID `20260711.1`.
 
 ## 20260707.2 Home Assistant Rotation Timer Hotfix
 
