@@ -1,4 +1,4 @@
-﻿# What's New In 0.3.0
+# What's New In 0.3.0
 
 This update is for users on the earlier 0.2.9 public build.
 
@@ -16,7 +16,7 @@ This update is for users on the earlier 0.2.9 public build.
 - Kept Home Assistant-owned slots securely recorded while hiding them from normal gallery and preview work.
 - Preserved a separate secure library route for stock-firmware frames.
 - Updated the bundled modified firmware to `step6-display-slot-1.135-library-capabilities` so the app verifies complete frame support before opening or changing a modified-frame library.
-- Updated the visible app version to `0.3.0`; this build uses build ID `20260713.3`.
+- Updated the visible app version to `0.3.0`; this build uses build ID `20260713.4`.
 
 ## 20260711.1 Interrupted Firmware Update Recovery
 
@@ -208,4 +208,3 @@ This update is for users coming from the previous public build, 0.2.7.
 - If you use modified firmware, allow the frame to finish any flashing, backup, or restore workflow before disconnecting USB.
 - If your modified frame uses Wi-Fi, keep using the same app folder when updating so encrypted Wi-Fi details and library data remain available.
 - If you use Frame Groups, wake the target frames with a double click before group sends until scheduled wake/group delivery is expanded further.
-
