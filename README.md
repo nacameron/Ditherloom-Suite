@@ -28,9 +28,15 @@ Create a folder somewhere on your hard drive that you will remember, extract the
 - Use `Delete Slot` to remove the selected image.
 - Use `Delete All` only when you want to clear every image from the selected frame.
 
+## Secure Frame Libraries
+
+Each exact frame has its own protected local library for source links, transforms, memo text, templates, thumbnails, Home Assistant ownership, nickname, groups, and presentation state. Modified frames open the same library over Custom USB, Bluetooth, or Wi-Fi; changing connection method never changes ownership.
+
+Routine `Read` observes the physical frame without discarding trusted library details. Use `Sync Previews` when you deliberately want to reconcile the frame and its app library slot by slot. Library backups are encrypted for the Windows account that created them and should still be stored somewhere private.
+
 ## Privacy
 
-Your files, your PC. Ditherloom Suite keeps your images, source paths, encrypted library records, Wi-Fi details, backups, and frame data on your own computer and frame. They are not sent to us or to any outside service.
+Your files, your PC. Ditherloom Suite keeps your images, source paths, protected frame libraries, Wi-Fi details, encrypted backups, and frame data on your own computer and frame. They are not sent to us or to any outside service.
 
 Home Assistant setup stores only the frame/Gateway connection settings needed for that integration, such as the Home Assistant address, Library ID, reserved slot, topic base, and scheduled wake timing. It does not send your personal source photos, app library, relink cache, thumbnails, or frame backups to Home Assistant. Home Assistant-rendered content is generated and served by the Home Assistant system you choose. If your Home Assistant runs locally, that content stays within your local Home Assistant network path. If you use Home Assistant Cloud, a reverse proxy, or another remote access service, that is part of your Home Assistant/network privacy setup rather than this app uploading your files.
 

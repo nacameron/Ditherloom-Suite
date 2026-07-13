@@ -1,6 +1,22 @@
-﻿# What's New In 0.2.9
+﻿# What's New In 0.3.0
 
-This update is for users on the earlier 0.2.8 public build.
+This update is for users on the earlier 0.2.9 public build.
+
+## 20260713.1 Secure And Reliable Frame Libraries
+
+- Reworked frame libraries to be more secure, reliable, consistent, and faster during normal gallery use.
+- Added a protected library for each exact frame, keeping source links, transforms, memo text, templates, thumbnails, Home Assistant ownership, nickname, and groups together.
+- Kept the same modified-frame library available over Custom USB, Bluetooth, and Wi-Fi. Changing connection method no longer changes which library is opened.
+- Made routine Read faster by loading the trusted app library while observing the connected frame. `Sync Previews` remains the deliberate slot-by-slot reconciliation step.
+- Added safer all-or-nothing library updates, restart recovery, explicit failure handling, and stronger frame-isolation checks.
+- Added encrypted library backups and protected restore handling for private sources and editable details.
+- Improved gallery reliability so confirmed Sends update the correct slot only after verification, while cancelled or unsent work cannot replace an existing thumbnail.
+- Unified stored-source rendering for the editor mockup and gallery, preserving transforms and memo content consistently.
+- Kept unavailable originals visible only as clearly marked relink references rather than treating frame images as editable originals.
+- Kept Home Assistant-owned slots securely recorded while hiding them from normal gallery and preview work.
+- Preserved a separate secure library route for stock-firmware frames.
+- Updated the bundled modified firmware to `step6-display-slot-1.135-library-capabilities` so the app verifies complete frame support before opening or changing a modified-frame library.
+- Updated the visible app version to `0.3.0`; this build uses build ID `20260713.1`.
 
 ## 20260711.1 Interrupted Firmware Update Recovery
 
@@ -84,7 +100,7 @@ This update is for users coming from the previous public build, 0.2.7.
 - Hardened frame privacy isolation. Connecting or syncing a different modified frame blanks the visible gallery and mockup first, then renders only the manifest for the connected Gateway Library ID.
 - Changed modified-firmware preview sync to be manifest-first. The app trusts the Gateway manifest, rebuilds local thumbnails from encrypted source/packed data where possible, and uses downloaded frame previews only as a relink aid when the original source is missing.
 - Added encrypted source filename/path metadata round-tripping through the app library and frame slot metadata where supported.
-- Added visual relinking improvements, including frame-reference previews and folder thumbnail selection for cases where automatic source matching is uncertain.
+- Reworked the app library for better stability and consistency, with frame-reference previews and manual source selection when an original image needs to be relinked.
 - Locked confirmed edge-mask and image-effect render output with build-time checks so future builds fail if those renderers drift without explicit signoff.
 - Added firmware-owned Ditherloom Suite Powered startup art for first custom-firmware boot after stock-to-custom conversion. It does not use a gallery slot.
 - Tightened firmware update prompts so the app does not offer an older bundled firmware over a newer frame version.
