@@ -16,7 +16,7 @@ This update is for users on the earlier 0.2.9 public build.
 - Kept Home Assistant-owned slots securely recorded while hiding them from normal gallery and preview work.
 - Preserved a separate secure library route for stock-firmware frames.
 - Updated the bundled modified firmware to `step6-display-slot-1.135-library-capabilities` so the app verifies complete frame support before opening or changing a modified-frame library.
-- Updated the visible app version to `0.3.0`; this build uses build ID `20260713.5`.
+- Updated the visible app version to `0.3.0`; this build uses build ID `20260714.1`.
 
 ## 20260711.1 Interrupted Firmware Update Recovery
 
