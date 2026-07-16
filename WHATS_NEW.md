@@ -2,6 +2,11 @@
 
 This update is for users on the earlier 0.2.9 public build.
 
+## 20260716.1 Fixed Connection Race
+
+- Fixed Connection Race
+- Kept the visible app version at `0.3.0`; this build uses build ID `20260716.1`.
+
 ## 20260713.1 Secure And Reliable Frame Libraries
 
 - Reworked frame libraries to be more secure, reliable, consistent, and faster during normal gallery use.
