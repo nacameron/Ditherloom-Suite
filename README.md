@@ -6,6 +6,8 @@ Ditherloom Suite is a privacy-first Windows application for preparing photos, me
 
 Open the [latest Ditherloom Suite release](https://github.com/nacameron/Ditherloom-Suite/releases/latest).
 
+Current release: **v0.3.0 Neo**, build **`20260731.2`**.
+
 ### New users
 
 Download and run **`Ditherloom-Setup-0.3.0-Neo.exe`**.
