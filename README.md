@@ -18,6 +18,8 @@ The installer places the application under Program Files and keeps each user's p
 
 Open the existing Ditherloom Suite client and select **Check for Updates**. The app will download **`Ditherloom-Migration-0.3.0-Neo.zip`**, preserve the existing protected state, install Neo, verify the migration, and leave the old installation untouched if migration cannot be completed safely.
 
+The migration archive includes the verified `DitherloomSuite.exe` bootstrap required by the last public single-file client and hands installation to the protected folder updater automatically.
+
 Do not download or extract the migration ZIP manually. It is labelled **Automatic updater file - existing installations only** on the release page.
 
 ## What Neo Adds
