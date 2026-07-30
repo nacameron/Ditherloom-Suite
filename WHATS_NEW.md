@@ -1,6 +1,26 @@
 # What's New In 0.3.0
 
-This update is for users on the earlier 0.2.9 public build.
+This update is for users of the earlier single-file Ditherloom Suite client.
+
+## v0.3.0 Neo
+
+- Rebuilt the Windows client around a modern PySide6 interface with Dark, Light, and automatic appearance modes.
+- Added Ditherloom-Advanced as the default photo renderer, with Normal, Enhanced richness, and Dark recovery modes. Atkinson remains available for comparison and as a reliable fallback.
+- Moved rendering, thumbnail work, frame reads, preview reconciliation, and device operations away from the interface thread for a smoother editor and clearer progress feedback.
+- Added a larger physical-frame preview with direct drag, wheel or on-screen zoom, rotation, horizontal and vertical flip, edge and background treatments, text, and stickers.
+- Reworked Gallery and Memo editing around the protected per-frame SQLite library, preserving source links, transforms, templates, editable memo details, and representative thumbnails.
+- Kept one library per physical frame across USB, Bluetooth, and Wi-Fi, with Gateway-only modified-firmware commands and clearer connection, battery, nickname, serial, and progress state.
+- Added the expanded visual Memo template library, bundled open-source fonts, OpenMoji stickers, scheduling, slot selection, and memo-aware Gallery navigation.
+- Added Frame Groups while keeping a separate protected library for every member frame; group delivery mirrors the master's content into the same slots on selected members.
+- Improved stock backup, stock-to-modified conversion, restore-to-stock, Home Assistant setup, timed deletion, repeat display, and full-frame rotation controls.
+- Changed Windows distribution to a proper folder installation under Program Files, with protected per-user data, automatic migration from the old portable client, and a clean uninstaller.
+- Kept photos, editable data, credentials, libraries, and backups local. Ditherloom Suite does not upload or process user files on an external service.
+
+### Which Download To Use
+
+- **New installation:** download and run `Ditherloom-Setup-0.3.0-Neo.exe`.
+- **Existing single-file client:** use **Check for Updates** inside Ditherloom Suite. It automatically uses `Ditherloom-Migration-0.3.0-Neo.zip`; users should not extract or run that archive manually.
+- The installer is unsigned because Ditherloom Suite is a free, noncommercial passion project. Windows may display a reputation warning. Download only from the official Ditherloom Suite GitHub release page and verify the published SHA-256 when required.
 
 ## 20260716.1 Fixed Connection Race
 
