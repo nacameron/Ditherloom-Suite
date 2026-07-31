@@ -4,6 +4,15 @@ This update is for users of the earlier single-file Ditherloom Suite client.
 
 ## v0.3.0 Neo
 
+### 20260801.1 Gallery, Memo, And Rendering Repair
+
+- Preserved verified source links and saved transforms when the connected frame reports unchanged physical content, so relinked images rebuild from their original source plus the canonical recipe.
+- Kept progressive thumbnail updates visual-only: they can refresh preview pixels without replacing the slot's canonical Photo/Memo type, settings, source identity, or certified Memo template.
+- Restored Gallery-to-Memo routing for the expanded certified Memo template collection while retaining ordinary photos as photos.
+- Made new and reset ordinary photos start with Ditherloom-Advanced, preset **None**, and smoothing **Off**. Existing saved recipes remain unchanged and named presets remain available.
+- Made explicit white, black, yellow, and red background regions use their exact physical single-ink panel codes instead of dithering those background-only pixels.
+- Kept Auto, Edge, Extend, Blur, photo pixels, feathered boundaries, Memo rendering, stickers, text, templates, and the accepted Ditherloom-Advanced model on their existing validated paths.
+
 - Rebuilt the Windows client around a modern PySide6 interface with Dark, Light, and automatic appearance modes.
 - Added Ditherloom-Advanced as the default photo renderer, with Normal, Enhanced richness, and Dark recovery modes. Atkinson remains available for comparison and as a reliable fallback.
 - Moved rendering, thumbnail work, frame reads, preview reconciliation, and device operations away from the interface thread for a smoother editor and clearer progress feedback.
