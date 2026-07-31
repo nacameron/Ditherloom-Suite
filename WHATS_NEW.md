@@ -22,6 +22,13 @@ This update is for users of the earlier single-file Ditherloom Suite client.
 - **Existing single-file client:** use **Check for Updates** inside Ditherloom Suite. It automatically uses `Ditherloom-Migration-0.3.0-Neo.zip`; users should not extract or run that archive manually.
 - The installer is unsigned because Ditherloom Suite is a free, noncommercial passion project. Windows may display a reputation warning. Download only from the official Ditherloom Suite GitHub release page and verify the published SHA-256 when required.
 
+## 20260731.5 Gallery And Library Cleanup
+
+- Fixed Gallery preview requests so a failed background request for another slot cannot be reported against the slot the user selected.
+- Kept encrypted rollback snapshots only while a Sync transaction is unresolved, then removed them after a verified commit or successful rollback.
+- Removed redundant damaged-database copies after a recovery replacement has been validated, while retaining the active safety snapshot until recovery succeeds.
+- Added safe cleanup for older resolved Sync artifacts after the canonical database validates successfully. Physical-frame contents, source files, canonical libraries, and stock firmware backups are not included in this cleanup.
+
 ## 20260731.4 Gallery Repair
 
 - Fixed source relinking so stale frame metadata cannot change a canonical Photo into a Memo.
