@@ -4,6 +4,11 @@ This update is for users of the earlier single-file Ditherloom Suite client.
 
 ## v0.3.0 Neo
 
+### 20260801.3 Disconnect After Sync Repair
+
+- A completed Sync can no longer leave Disconnect blocked by the local SQLite-to-Gallery refresh that follows it.
+- Real frame operations, including an active Gateway Sync, Send, Delete, firmware work and frame-preview downloads, remain protected from interruption.
+
 ### 20260801.2 Complete Gateway Library Repair
 
 - Read now shows every Gallery-eligible slot reported by the connected frame, even when an older encrypted library record is incomplete.
