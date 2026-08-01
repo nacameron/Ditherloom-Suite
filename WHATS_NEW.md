@@ -4,6 +4,12 @@ This update is for users of the earlier single-file Ditherloom Suite client.
 
 ## v0.3.0 Neo
 
+### 20260801.4 Safe Disconnect From An Unfinished Sync
+
+- Disconnect now cancels and rolls back an unfinished encrypted-library Sync, then closes the selected frame connection automatically.
+- Local gallery work can no longer hide an active authoritative Sync transaction from the connection screen.
+- A Sync startup failure now rolls its encrypted transaction back instead of leaving a staging journal that blocks later commands.
+
 ### 20260801.3 Disconnect After Sync Repair
 
 - A completed Sync can no longer leave Disconnect blocked by the local SQLite-to-Gallery refresh that follows it.
