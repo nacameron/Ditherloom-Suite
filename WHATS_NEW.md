@@ -4,6 +4,12 @@ This update is for users of the earlier single-file Ditherloom Suite client.
 
 ## v0.3.0 Neo
 
+### 20260801.2 Complete Gateway Library Repair
+
+- Read now shows every Gallery-eligible slot reported by the connected frame, even when an older encrypted library record is incomplete.
+- Sync detects and repairs partial canonical libraries instead of treating any non-empty library as complete.
+- The same verified Library ID remains authoritative across USB, Bluetooth, and Wi-Fi.
+
 ### 20260801.1 Gallery, Memo, And Rendering Repair
 
 - Preserved verified source links and saved transforms when the connected frame reports unchanged physical content, so relinked images rebuild from their original source plus the canonical recipe.
