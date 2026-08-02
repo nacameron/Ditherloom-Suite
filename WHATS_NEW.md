@@ -4,6 +4,12 @@ This update is for users of the earlier single-file Ditherloom Suite client.
 
 ## v0.3.0 Neo
 
+### 20260802.3 Visible And Cancellable Preview Recovery
+
+- Missing frame previews now load through the shared Gateway route with anchored in-app progress and whole-operation percentage feedback.
+- Preview recovery can be cancelled safely between frame reads, and Disconnect cancels optional preview loading before closing the connection.
+- USB, Bluetooth, and Wi-Fi retain the same canonical per-frame library and protected Sync transaction behavior.
+
 ### 20260802.1 Sync Completion And Gateway Class Repair
 
 - Sync now completes as soon as its authoritative encrypted-library transaction commits; source thumbnails and missing frame previews continue through the existing bounded background workers.
