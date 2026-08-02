@@ -4,6 +4,13 @@ This update is for users of the earlier single-file Ditherloom Suite client.
 
 ## v0.3.0 Neo
 
+### 20260802.1 Sync Completion And Gateway Class Repair
+
+- Sync now completes as soon as its authoritative encrypted-library transaction commits; source thumbnails and missing frame previews continue through the existing bounded background workers.
+- USB, Bluetooth, and Wi-Fi use the same Gateway Sync transaction and the same canonical per-frame Library ID.
+- Raw Gateway Photo/Memo observations remain available long enough for explicit Sync to repair stale frame classes, while certified Memo template identity in SQLite remains the sole authority for Gallery navigation.
+- Disconnect, cancellation, rollback, shutdown, source-linked thumbnails, and missing-source frame-preview fallbacks retain their existing protected routes.
+
 ### 20260801.4 Safe Disconnect From An Unfinished Sync
 
 - Disconnect now cancels and rolls back an unfinished encrypted-library Sync, then closes the selected frame connection automatically.
