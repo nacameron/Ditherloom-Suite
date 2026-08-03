@@ -4,6 +4,13 @@ This update is for users of the earlier single-file Ditherloom Suite client.
 
 ## v0.3.0 Neo
 
+### 20260803.1 Wi-Fi Connection Reliability
+
+- Improved connection reliability for frames that need a little longer to make their Wi-Fi Gateway available.
+- Restored optional per-frame static network settings, including IP address, gateway, subnet mask, and DNS server.
+- Added manual connection by the frame's current IP address or hostname when automatic LAN discovery cannot find an awake frame.
+- Kept Wi-Fi communication on one live Gateway connection, with safer cleanup and reconnect guidance if that connection is interrupted.
+
 ### 20260802.3 Visible And Cancellable Preview Recovery
 
 - Missing frame previews now load through the shared Gateway route with anchored in-app progress and whole-operation percentage feedback.
