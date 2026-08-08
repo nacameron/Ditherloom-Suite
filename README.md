@@ -6,17 +6,17 @@ Ditherloom Suite is a privacy-first Windows application for preparing photos, me
 
 Open the [latest Ditherloom Suite release](https://github.com/nacameron/Ditherloom-Suite/releases/latest).
 
-Current release: **v0.3.0 Neo**, build **`20260803.1`**.
+Current release: **v0.3.1 Neo**, build **`20260808.6`**.
 
 ### New users
 
-Download and run **`Ditherloom-Setup-0.3.0-Neo.exe`**.
+Download and run **`Ditherloom-Setup-0.3.1-Neo.exe`**.
 
 The installer places the application under Program Files and keeps each user's protected library and settings in their Windows profile. The installer is unsigned because Ditherloom Suite is a free, noncommercial passion project, so Windows may display a reputation warning.
 
 ### Existing single-file users
 
-Open the existing Ditherloom Suite client and select **Check for Updates**. The app will download **`Ditherloom-Migration-0.3.0-Neo.zip`**, preserve the existing protected state, install Neo, verify the migration, and leave the old installation untouched if migration cannot be completed safely.
+Open the existing Ditherloom Suite client and select **Check for Updates**. The app will download **`Ditherloom-Migration-0.3.1-Neo.zip`**, preserve the existing protected state, install Neo, verify the migration, and leave the old installation untouched if migration cannot be completed safely.
 
 The migration archive includes the verified `DitherloomSuite.exe` bootstrap required by the last public single-file client and hands installation to the protected folder updater automatically.
 
@@ -25,13 +25,16 @@ Do not download or extract the migration ZIP manually. It is labelled **Automati
 ## What Neo Adds
 
 - A modern PySide6 interface with Dark, Light, and automatic appearance modes.
+- Patchwork Composer for sewing up to six photos, shaped regions, text, and OpenMoji stickers into one editable frame image, with layouts, snapping, layers, relinking, and representative thumbnails.
 - Ditherloom-Advanced photo rendering with Normal, Enhanced richness, and Dark recovery modes.
+- Panel-safe gradients for supported text, outlines, backgrounds, and Patchwork elements.
 - Faster background rendering, thumbnails, frame reads, and progress feedback.
 - A larger physical-frame preview with drag, zoom, rotation, flip, effects, text, and stickers.
 - Protected per-frame SQLite libraries shared correctly across USB, Bluetooth, and Wi-Fi.
 - Expanded memos, templates, open-source fonts, OpenMoji stickers, schedules, and slot controls.
 - Frame Groups with separate libraries for each physical frame and matched content delivery by slot.
 - Improved stock backup, firmware conversion, restore-to-stock, and Home Assistant setup.
+- Automatic custom-firmware update guidance before Patchwork becomes available, while existing Gallery and Memo features remain usable on earlier custom firmware.
 - A proper Program Files installation, automatic migration, updates, and clean uninstall.
 
 See [What's New](WHATS_NEW.md) for the full history.

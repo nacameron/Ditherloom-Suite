@@ -1,8 +1,8 @@
-# What's New In 0.3.0
+# What's New In 0.3.1
 
 This update is for users of the earlier single-file Ditherloom Suite client.
 
-## v0.3.0 Neo
+## v0.3.1 Neo
 
 ### Ditherloom Patchwork
 
@@ -11,7 +11,14 @@ This update is for users of the earlier single-file Ditherloom Suite client.
 - Let each photo use its own renderer and Ditherloom-Advanced mode, including Normal, Enhanced richness, and Dark recovery. OpenMoji stickers retain their dedicated colour-preserving route.
 - Kept editing responsive by rerendering changed sections in background workers and showing sewing progress while a saved Patchwork is reconstructed.
 - Added direct Gateway delivery, physical verification, representative thumbnails, Gallery-to-Patchwork navigation, per-source relinking, and editable reconstruction from the exact frame's protected local library.
+- Added a dedicated Patchwork firmware capability. Ditherloom offers the required custom-firmware update automatically and keeps Patchwork unavailable until the connected frame confirms support; Gallery and Memo remain available on earlier custom firmware.
 - Kept every linked source and composition local. Ditherloom does not upload or remotely process Patchwork sources, layers, or finished images.
+
+### Gradients And Creative Controls
+
+- Added panel-safe gradients for text fills and outlines across Gallery, Memo, and Patchwork, using the same approved colour recipes as the rest of the app.
+- Added gradients to supported backgrounds, including the blank Memo template, without changing the rendering rules of illustrated Memo templates.
+- Gradients are prepared for the panel's four physical inks, which combine through controlled recipes and dithering to produce a much broader range of visible shades.
 
 ### 20260803.1 Wi-Fi Connection Reliability
 
@@ -73,8 +80,8 @@ This update is for users of the earlier single-file Ditherloom Suite client.
 
 ### Which Download To Use
 
-- **New installation:** download and run `Ditherloom-Setup-0.3.0-Neo.exe`.
-- **Existing single-file client:** use **Check for Updates** inside Ditherloom Suite. It automatically uses `Ditherloom-Migration-0.3.0-Neo.zip`; users should not extract or run that archive manually.
+- **New installation:** download and run `Ditherloom-Setup-0.3.1-Neo.exe`.
+- **Existing single-file client:** use **Check for Updates** inside Ditherloom Suite. It automatically uses `Ditherloom-Migration-0.3.1-Neo.zip`; users should not extract or run that archive manually.
 - The installer is unsigned because Ditherloom Suite is a free, noncommercial passion project. Windows may display a reputation warning. Download only from the official Ditherloom Suite GitHub release page and verify the published SHA-256 when required.
 
 ## 20260731.5 Gallery And Library Cleanup
