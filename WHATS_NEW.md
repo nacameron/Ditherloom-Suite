@@ -4,6 +4,15 @@ This update is for users of the earlier single-file Ditherloom Suite client.
 
 ## v0.3.0 Neo
 
+### Ditherloom Patchwork
+
+- Added **Patchwork Composer** for modified-firmware frames, combining up to six photos, shaped photo regions, text blocks, or OpenMoji stickers into one editable frame image.
+- Added Freeform composition and visual layout templates with protected outside margins, clear gutters, snapping, layer ordering, aspect-safe photos, shape masks, outlines, panel-safe colours, and gradients.
+- Let each photo use its own renderer and Ditherloom-Advanced mode, including Normal, Enhanced richness, and Dark recovery. OpenMoji stickers retain their dedicated colour-preserving route.
+- Kept editing responsive by rerendering changed sections in background workers and showing sewing progress while a saved Patchwork is reconstructed.
+- Added direct Gateway delivery, physical verification, representative thumbnails, Gallery-to-Patchwork navigation, per-source relinking, and editable reconstruction from the exact frame's protected local library.
+- Kept every linked source and composition local. Ditherloom does not upload or remotely process Patchwork sources, layers, or finished images.
+
 ### 20260803.1 Wi-Fi Connection Reliability
 
 - Improved connection reliability for frames that need a little longer to make their Wi-Fi Gateway available.
