@@ -6,7 +6,7 @@ Ditherloom Suite is a privacy-first Windows application for preparing photos, me
 
 Open the [latest Ditherloom Suite release](https://github.com/nacameron/Ditherloom-Suite/releases/latest).
 
-Current release: **v0.3.1 Neo**, build **`20260808.6`**.
+Current release: **v0.3.1 Neo**, build **`20260810.1`**.
 
 ### New users
 
@@ -25,7 +25,7 @@ Do not download or extract the migration ZIP manually. It is labelled **Automati
 ## What Neo Adds
 
 - A modern PySide6 interface with Dark, Light, and automatic appearance modes.
-- Patchwork Composer for sewing up to six photos, shaped regions, text, and OpenMoji stickers into one editable frame image, with layouts, snapping, layers, relinking, and representative thumbnails.
+- Ditherloom Patchwork for sewing up to six photos, shaped regions, text, and OpenMoji stickers into one editable frame image, with layouts, snapping, layers, relinking, and representative thumbnails.
 - Ditherloom-Advanced photo rendering with Normal, Enhanced richness, and Dark recovery modes.
 - Panel-safe gradients for supported text, outlines, backgrounds, and Patchwork elements.
 - Faster background rendering, thumbnails, frame reads, and progress feedback.

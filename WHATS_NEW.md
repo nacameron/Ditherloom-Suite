@@ -4,9 +4,16 @@ This update is for users of the earlier single-file Ditherloom Suite client.
 
 ## v0.3.1 Neo
 
+### 20260810.1 Authoritative Slot Classes And Help
+
+- Kept the frame-reported physical class authoritative after both Read and Sync, so Photo, Memo, and Patchwork slots remain consistent across USB, Bluetooth, and Wi-Fi.
+- Preserved matching encrypted editing records and thumbnails without allowing stale or missing local documents to change a frame slot's physical class.
+- Updated all 39 How To articles for Patchwork, gradients, neutral photo starts, automatic custom-firmware guidance, and the current Gallery and Sync workflows.
+- Alphabetized the How To index and added a release regression that prevents unsorted or stale help content from shipping.
+
 ### Ditherloom Patchwork
 
-- Added **Patchwork Composer** for modified-firmware frames, combining up to six photos, shaped photo regions, text blocks, or OpenMoji stickers into one editable frame image.
+- Added **Ditherloom Patchwork** for modified-firmware frames, combining up to six photos, shaped photo regions, text blocks, or OpenMoji stickers into one editable frame image.
 - Added Freeform composition and visual layout templates with protected outside margins, clear gutters, snapping, layer ordering, aspect-safe photos, shape masks, outlines, panel-safe colours, and gradients.
 - Let each photo use its own renderer and Ditherloom-Advanced mode, including Normal, Enhanced richness, and Dark recovery. OpenMoji stickers retain their dedicated colour-preserving route.
 - Kept editing responsive by rerendering changed sections in background workers and showing sewing progress while a saved Patchwork is reconstructed.
