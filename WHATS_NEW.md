@@ -1,8 +1,16 @@
-# What's New In 0.3.1
+# What's New In 0.3.2
 
 This update is for users of the earlier single-file Ditherloom Suite client.
 
-## v0.3.1 Neo
+## v0.3.2 Neo
+
+### Spindle AI Leaders - Alpha
+
+- Added optional Local and Remote Spindle AI Leaders as an Alpha feature inside the single stable Ditherloom Suite client. Clipboard Spindle and the rest of the app remain stable features; there is no separate Alpha client or update channel.
+- Added reviewed isolated connectors for local Ollama, ComfyUI, and Stable Diffusion WebUI Forge, plus remote OpenAI, Google Gemini image generation, Stability AI, and Black Forest Labs FLUX routes. Each requires the user's own compatible service, model, account, and access.
+- Kept Clipboard, Local AI, and Remote AI behind separate explicit opt-ins. Remote requests require another approval on the first send of every Spindle session.
+- Restricted provider output to validated, metadata-free 400 x 300 RGB image pixels before it can cross into Gallery, Memo, or Patchwork through Load the Loom.
+- Added an explicit public-safe diagnostic export for Alpha testing. It reports only fixed connector outcomes and broad timing bands, never prompts, images, credentials, account details, paths, network or device details, frame data, or library data.
 
 ### 20260810.1 Authoritative Slot Classes And Help
 
@@ -87,8 +95,8 @@ This update is for users of the earlier single-file Ditherloom Suite client.
 
 ### Which Download To Use
 
-- **New installation:** download and run `Ditherloom-Setup-0.3.1-Neo.exe`.
-- **Existing single-file client:** use **Check for Updates** inside Ditherloom Suite. It automatically uses `Ditherloom-Migration-0.3.1-Neo.zip`; users should not extract or run that archive manually.
+- **New installation:** download and run `Ditherloom-Setup-0.3.2-Neo.exe`.
+- **Existing single-file client:** use **Check for Updates** inside Ditherloom Suite. It automatically uses `Ditherloom-Migration-0.3.2-Neo.zip`; users should not extract or run that archive manually.
 - The installer is unsigned because Ditherloom Suite is a free, noncommercial passion project. Windows may display a reputation warning. Download only from the official Ditherloom Suite GitHub release page and verify the published SHA-256 when required.
 
 ## 20260731.5 Gallery And Library Cleanup

@@ -157,3 +157,17 @@ The folder also carries esptool's required Python dependencies: bitstring and ti
 ## Bundled Fonts
 
 The current folder package includes 29 font families. Twenty-eight use the SIL Open Font License 1.1 and Permanent Marker uses Apache License 2.0. Exact families, copyright statements and upstream sources are recorded in `licenses/FONT_CATALOGUE.md`; the unmodified licence and metadata files remain beside each font.
+
+## Optional Spindle Leader Services
+
+Ditherloom Suite can display setup guidance for separately installed local software and separately contracted remote API services. These products and services are not bundled with Ditherloom Suite, and listing them does not transfer ownership of their names, software, models, or services.
+
+- Ollama: https://ollama.com/ and https://docs.ollama.com/
+- ComfyUI: https://www.comfy.org/ and https://docs.comfy.org/
+- Stable Diffusion WebUI Forge: https://github.com/lllyasviel/stable-diffusion-webui-forge
+- OpenAI API: https://platform.openai.com/docs/guides/image-generation
+- Google Gemini API: https://ai.google.dev/gemini-api/docs/image-generation
+- Stability AI API: https://platform.stability.ai/docs/api-reference
+- Black Forest Labs FLUX API: https://docs.bfl.ai/
+
+The respective names and marks belong to their owners. Users obtain, install, configure, license, and pay for any selected provider or model directly. Their current terms, privacy policies, acceptable-use rules, model licences, retention policies, and charges apply independently of Ditherloom Suite.
