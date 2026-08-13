@@ -4,6 +4,10 @@ This update is for users of the earlier single-file Ditherloom Suite client.
 
 ## v0.3.2 Neo
 
+### 20260813.6 Release Notes Display
+
+- Fixed the PySide update window so **Show Details** displays the published release notes instead of incorrectly reporting that no notes were provided.
+
 ### Spindle AI Leaders - Alpha
 
 - Added optional Local and Remote Spindle AI Leaders as an Alpha feature inside the single stable Ditherloom Suite client. Clipboard Spindle and the rest of the app remain stable features; there is no separate Alpha client or update channel.
