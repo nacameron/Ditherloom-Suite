@@ -4,9 +4,17 @@ This update is for users of the earlier single-file Ditherloom Suite client.
 
 ## v0.3.2 Neo
 
+### 20260814.1 Faster Connections And Enhanced Refresh
+
+- Added **Enhanced refresh (slower)** as an optional per-image setting for Gallery photos, Memos, and Patchwork on modified frames. It clears the display to white before drawing the selected item and may strengthen darker colours or reduce faint traces from the previous image. Results vary, so it defaults Off and clearly warns that it takes longer and uses more battery.
+- Saved the refresh choice with the physical slot through the same Gateway used by USB, Bluetooth, and Wi-Fi. Later displays by the app, frame controls, rotation, or existing automation routes retain that slot's choice. Replacing content resets the slot to Normal unless Enhanced refresh is selected again.
+- Updated the bundled modified firmware to `step6-display-slot-1.147-enhanced-refresh`, adding the connection-agnostic `slotrefresh` capability without changing image payloads, renderers, libraries, or the normal display default.
+- Added the accepted connection-speed improvements while retaining the existing Gateway protocol, verification, CRC, encrypted library, and fallback behavior. Validated USB reads averaged 0.090 seconds and writes 0.862 seconds; Bluetooth writes fell by 40.0%; Wi-Fi reads fell by 91.5% and writes by 54.9%.
+- Added a silent startup update check after the splash screen. It uses the established public GitHub updater and shows the normal update offer only when a newer version or build exists. Current builds and offline computers receive no dialog or error, and the manual update check remains available.
+
 ### 20260813.6 Release Notes Display
 
-- Fixed the PySide update window so **Show Details** displays the published release notes instead of incorrectly reporting that no notes were provided.
+- Fixed the PySide update window so **Show Details** displays the release notes supplied by the established updater contract instead of incorrectly reporting that no notes were provided.
 
 ### Spindle AI Leaders - Alpha
 

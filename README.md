@@ -6,7 +6,7 @@ Ditherloom Suite is a privacy-first Windows application for preparing photos, me
 
 Open the [latest Ditherloom Suite release](https://github.com/nacameron/Ditherloom-Suite/releases/latest).
 
-Current release: **v0.3.2 Neo**, build **`20260813.6`**.
+Current release: **v0.3.2 Neo**, build **`20260814.1`**.
 
 ### New users
 
@@ -28,7 +28,10 @@ Do not download or extract the migration ZIP manually. It is labelled **Automati
 - Ditherloom Patchwork for sewing up to six photos, shaped regions, text, and OpenMoji stickers into one editable frame image, with layouts, snapping, layers, relinking, and representative thumbnails.
 - Spindle Clipboard for opt-in image hand-off, plus separately enabled Local and Remote Spindle AI Leaders in Alpha. The stable app and library remain isolated from provider traffic.
 - Ditherloom-Advanced photo rendering with Normal, Enhanced richness, and Dark recovery modes.
+- Optional per-image Enhanced Refresh for Gallery photos, Memos, and Patchwork on supported modified firmware, with the normal display route retained as the default.
 - Panel-safe gradients for supported text, outlines, backgrounds, and Patchwork elements.
+- Faster USB, Bluetooth, and Wi-Fi Gateway transfers without changing the protected per-frame library or transport contract.
+- Silent update checks after startup, with no warning when the computer is offline or already current.
 - Faster background rendering, thumbnails, frame reads, and progress feedback.
 - A larger physical-frame preview with drag, zoom, rotation, flip, effects, text, and stickers.
 - Protected per-frame SQLite libraries shared correctly across USB, Bluetooth, and Wi-Fi.
