@@ -4,6 +4,11 @@ This update is for users of the earlier single-file Ditherloom Suite client.
 
 ## v0.3.2 Neo
 
+### 20260815.2 Reliable Selected-Slot Deletion
+
+- Corrected **Delete Selected** on modified USB frames so deletion prepares the established Gateway session, verifies every erased slot against the physical frame, and reports an exact slot-level failure instead of appearing to complete without changing the frame.
+- If the selected modified USB connection disappears, Ditherloom now ends the stale session cleanly and returns to reconnection instead of leaving keepalive or Send in a false connected state.
+
 ### 20260815.1 Faster Send And Durable Editing State
 
 - Made **Send to frame** respond immediately: occupied-slot confirmation now appears before secure source preparation, and visible progress continues through upload, verification, thumbnail update, and display confirmation.
