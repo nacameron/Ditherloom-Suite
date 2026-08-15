@@ -4,6 +4,15 @@ This update is for users of the earlier single-file Ditherloom Suite client.
 
 ## v0.3.2 Neo
 
+### 20260815.1 Faster Send And Durable Editing State
+
+- Made **Send to frame** respond immediately: occupied-slot confirmation now appears before secure source preparation, and visible progress continues through upload, verification, thumbnail update, and display confirmation.
+- Restored the saved **Enhanced refresh (slower)** choice when reopening Gallery photos, Memos, and Patchwork. The physical slot remains authoritative across USB, Bluetooth, and Wi-Fi.
+- Kept modified frames connected over USB for the full app session, using a low-contention keepalive cadence that preserves the faster USB experience without delaying interface actions.
+- Preserved exact-content source links and transforms through partial library updates, so an unrelated frame read cannot discard another slot's protected editing memory.
+- Added encrypted Patchwork version recovery by exact physical-content identity. A nonmatching older composition is offered only as unsaved work and never replaces frame content unless the user explicitly sends it.
+- Corrected terminal Send and display-failure cleanup so a failed acknowledgement cannot leave a hidden active operation that blocks the next Send or Disconnect.
+
 ### 20260814.1 Faster Connections And Enhanced Refresh
 
 - Added **Enhanced refresh (slower)** as an optional per-image setting for Gallery photos, Memos, and Patchwork on modified frames. It clears the display to white before drawing the selected item and may strengthen darker colours or reduce faint traces from the previous image. Results vary, so it defaults Off and clearly warns that it takes longer and uses more battery.
