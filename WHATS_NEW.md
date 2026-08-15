@@ -4,6 +4,12 @@ This update is for users of the earlier single-file Ditherloom Suite client.
 
 ## v0.3.2 Neo
 
+### 20260815.3 Reliable Source Recovery
+
+- Preserved encrypted photo and Spindle source links, transforms, and protected previews when a frame reports changed slot content, so reconciliation cannot silently discard recoverable editing state.
+- Recovery is bound to the exact physical content identity reported by the frame. It never overrides a different frame CRC and does not weaken explicit, irreversible deletion.
+- Added regression coverage for replacement, exact-content restoration, duplicate protected references, plaintext exclusion, and permanent deletion cleanup.
+
 ### 20260815.2 Reliable Selected-Slot Deletion
 
 - Corrected **Delete Selected** on modified USB frames so deletion prepares the established Gateway session, verifies every erased slot against the physical frame, and reports an exact slot-level failure instead of appearing to complete without changing the frame.
