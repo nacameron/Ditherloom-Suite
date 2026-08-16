@@ -4,6 +4,17 @@ This update is for users of the earlier single-file Ditherloom Suite client.
 
 ## v0.3.2 Neo
 
+### 20260816.2 Ditherloom-Advanced Input Consistency
+
+- Preserved the signed-off Complete-v6 Ditherloom-Advanced renderer unchanged while ensuring new and recovered Gallery images enter it through the intended production input contract.
+- Added release-blocking parity checks for the transformed source, all three Advanced routes, legal native codes, packed payload identity, and frozen renderer inventory.
+- Kept explicitly selected adjustments, effects, edge masks, and Advanced route choices intact.
+
+### 20260816.1 Accurate Image Compare
+
+- Image Compare now identifies the renderer actually selected instead of always naming Ditherloom-Advanced.
+- Source and device-output previews now use consistent pixel-preserving display scaling, avoiding a misleading blurred source comparison.
+
 ### 20260815.3 Reliable Source Recovery
 
 - Preserved encrypted photo and Spindle source links, transforms, and protected previews when a frame reports changed slot content, so reconciliation cannot silently discard recoverable editing state.
