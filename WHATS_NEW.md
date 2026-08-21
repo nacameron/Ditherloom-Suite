@@ -4,6 +4,12 @@ This update is for users of the earlier single-file Ditherloom Suite client.
 
 ## v0.3.2 Neo
 
+### 20260821.1 Wi-Fi Discovery Reliability
+
+- Wi-Fi Scan now searches only the physical local network selected by Windows, preventing VPN and unrelated virtual adapters from delaying or hiding an awake frame.
+- Remembered frame addresses can prioritise a probe only when they are on that current local network; every result still requires fresh identity from the live Ditherloom Gateway.
+- Discovery no longer changes frame rotation state while probing, making scans substantially faster without altering normal connection, Read, Sync, Send, or keepalive behaviour.
+
 ### 20260816.2 Ditherloom-Advanced Input Consistency
 
 - Preserved the signed-off Complete-v6 Ditherloom-Advanced renderer unchanged while ensuring new and recovered Gallery images enter it through the intended production input contract.
